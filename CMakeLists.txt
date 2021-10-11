@@ -42,3 +42,4 @@ add_library (glload
  ${common_files}
  ${os_specific_files}
 )
+install(TARGETS glload DESTINATION ${CMAKE_INSTALL_LIBDIR})
