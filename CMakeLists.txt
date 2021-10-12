@@ -43,4 +43,4 @@ add_library (glload
  ${os_specific_files}
 )
 target_link_libraries(glload opengl32)
-install(TARGETS glload DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
+install(TARGETS glload RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
