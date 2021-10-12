@@ -5,7 +5,7 @@
 
 cmake_minimum_required(VERSION 2.6)
 project(glload)
-
+target_link_libraries(glload opengl32)
 # Define useful variables to handle OS/Compiler differences
 if (MSVC)
     set(CMAKE_CXX_FLAGS_DEBUG   "${CMAKE_CXX_FLAGS_DEBUG} /DMEMORY_DEBUGGING")
