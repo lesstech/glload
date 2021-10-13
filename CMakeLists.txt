@@ -38,7 +38,7 @@ file(GLOB common_files
 include_directories ("${PROJECT_SOURCE_DIR}/include")
 
 # add sources of the "glload" library
-add_library (glload
+add_library (glload STATIC
  ${common_files}
  ${os_specific_files}
 )
