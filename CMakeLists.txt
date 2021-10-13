@@ -44,3 +44,9 @@ add_library (glload STATIC
 )
 target_link_libraries(glload opengl32)
 install(TARGETS glload EXPORT glloadTargets RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
+
+install(EXPORT glloadTargets
+  FILE glloadConfig.cmake
+  NAMESPACE unofficial::glload::
+  DESTINATION share/glload
+)
