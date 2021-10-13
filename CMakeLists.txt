@@ -47,6 +47,5 @@ install(TARGETS glload EXPORT glloadTargets RUNTIME DESTINATION ${CMAKE_INSTALL_
 
 install(EXPORT glloadTargets
   FILE glloadConfig.cmake
-  NAMESPACE unofficial::glload::
   DESTINATION share/glload
 )
